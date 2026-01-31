@@ -1,0 +1,15 @@
+Login:
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+password to login:
+cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+command used:
+ls
+./bandit20-do cat /etc/bandit_pass/bandit20
+explanation:
+This level provides a special binary called bandit20-do.
+This program runs commands as the user bandit20, even though you are logged in as bandit19.
+Executing bandit20-do with the cat command allows you to read /etc/bandit_pass/bandit20,
+which is normally accessible only by bandit20.
+The output is the password for the next level.
+password for next level:
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
