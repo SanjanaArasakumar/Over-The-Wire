@@ -1,0 +1,18 @@
+Login:
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+password to login:
+FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+command used:
+ls
+cp sshkey.private mykey
+chmod 600 mykey
+ssh -i mykey bandit14@localhost
+cat /etc/bandit_pass/bandit14
+explanation:
+Instead of a password, this level provides a private SSH key (sshkey.private).
+SSH requires private keys to have strict permissions, so the key is copied to a new file and restricted using chmod 600.
+The ssh -i option tells SSH to authenticate using this private key.
+Logging in as bandit14 on localhost allows access to the protected password file.
+Reading /etc/bandit_pass/bandit14 reveals the password for the next level.
+password for next level:
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
