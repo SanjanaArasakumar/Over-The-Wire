@@ -1,0 +1,17 @@
+Login:
+ssh bandit22@bandit.labs.overthewire.org -p 2220
+password to login:
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+command used:
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+explanation:
+This level also uses a cron job that runs automatically.
+By inspecting /etc/cron.d/cronjob_bandit23, you can see which script is executed.
+The script /usr/bin/cronjob_bandit23.sh dynamically generates the filename that contains the password, based on the username.
+Understanding how the script constructs the filename allows you to locate and read the correct file.
+That file contains the password for the next level.
+password for next level:
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+
+
