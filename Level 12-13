@@ -1,0 +1,24 @@
+Login:
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+password to login:
+7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+command used:
+mkdir /tmp/bandit12
+cp data.txt /tmp/bandit12
+cd /tmp/bandit12
+xxd -r data.txt data
+file data
+gzip -d data.gz
+bzip2 -d data.bz2
+tar -xf data.tar
+tar -xf data.tar
+gzip -d data.gz
+cat data
+explanation:
+The file data.txt is hex-encoded and then compressed multiple times using different formats (gzip, bzip2, tar).
+First, xxd -r converts the hex dump back into binary data.
+Then the file command is used repeatedly to identify the current file type.
+Based on the file type, the appropriate decompression command (gzip, bzip2, tar) is applied step by step.
+After fully extracting all layers, the final file contains the password for the next level.
+password for next level:
+FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
