@@ -1,0 +1,18 @@
+Login:
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+password to login:
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+command used:
+find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
+explanation:
+The password is stored somewhere on the server
+The file:
+  is owned by user bandit7
+  belongs to group bandit6
+  is exactly 33 bytes in size
+find / searches the entire filesystem
+2>/dev/null suppresses permission denied errors
+Once the correct file is found, cat is used to read it
+password for next level:
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
