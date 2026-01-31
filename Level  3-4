@@ -1,0 +1,12 @@
+Login:
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+password to login:
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+command used:
+ls -a
+cat .hidden
+explanation:
+The password is stored in a hidden file.
+ls -a lists hidden files, and .hidden contains the password.
+password for next level:
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
