@@ -1,0 +1,14 @@
+Login:
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+password to login:
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+command used:
+openssl s_client -connect localhost:30001
+(then paste the current password and press Enter)
+explanation:
+This level is similar to the previous one, but the service on port 30001 uses SSL/TLS encryption.
+openssl s_client is used to establish a secure connection to the service.
+After the connection is established, you manually paste the current password into the session.
+If the password is correct, the server responds with the password for the next level.
+password for next level:
+kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
