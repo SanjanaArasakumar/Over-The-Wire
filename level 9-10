@@ -1,0 +1,13 @@
+Login:
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+password to login:
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+command used:
+strings data.txt | grep "="
+explanation:
+The file data.txt contains mostly non-human-readable (binary) data.
+The strings command extracts readable text from binary files.
+Among the readable strings, the password is the one that contains the character =.
+Using grep "=" filters and displays that line, which contains the password for the next level.
+password for next level:
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
