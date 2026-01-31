@@ -1,0 +1,12 @@
+Login:
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+password to login:
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+command used:
+file ./*
+cat ./-file07
+explanation:
+Only one file is human-readable.
+The file command identifies it, and cat displays its contents.
+password for next level:
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
