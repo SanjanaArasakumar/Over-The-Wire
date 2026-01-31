@@ -1,0 +1,18 @@
+Login:
+ssh bandit21@bandit.labs.overthewire.org -p 2220
+password to login:
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+command used:
+ls /etc/cron.d
+cat /etc/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+explanation:
+This level introduces cron jobs, which are scheduled tasks that run automatically.
+The directory /etc/cron.d contains cron configuration files.
+The file cronjob_bandit22 shows a script that is executed regularly.
+By reading the script /usr/bin/cronjob_bandit22.sh, you can see where the password is written or stored.
+The script reveals the location of the password for the next level.
+password for next level:
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+
+
