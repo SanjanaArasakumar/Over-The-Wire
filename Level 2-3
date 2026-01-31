@@ -1,0 +1,11 @@
+Login:
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+password to login:
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+command used:
+cat "spaces in this filename"
+explanation:
+The filename contains spaces.
+Using quotes tells the shell to treat the entire name as one file.
+password for next level:
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
