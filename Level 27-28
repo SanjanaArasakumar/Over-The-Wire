@@ -1,0 +1,16 @@
+Login:
+ssh bandit27@bandit.labs.overthewire.org -p 2220
+password to login:
+upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+command used:
+ls
+git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
+cd repo
+cat README
+explanation:
+This level introduces a Git repository.
+The home directory contains a Git repo accessible via SSH.
+By cloning the repository, you download its contents locally.
+Inside the cloned repo, the README file contains the password for the next level.
+password for next level:
+Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
