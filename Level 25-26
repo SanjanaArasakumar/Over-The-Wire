@@ -1,0 +1,18 @@
+Login:
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+password to login:
+iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+command used:
+ls
+ssh -i bandit26.sshkey bandit26@localhost
+(then resize terminal and run :set shell=/bin/bash inside more)
+explanation:
+This level provides a private SSH key (bandit26.sshkey) but logging in normally drops you into a restricted environment.
+The login uses the more command, which limits interaction.
+By resizing the terminal window to make more active and accessing its command mode,
+you can escape to a shell by setting the shell to /bin/bash.
+This gives you a normal shell as bandit26, allowing access to the password for the next level.
+password for next level:
+s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
+
+
