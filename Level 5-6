@@ -1,0 +1,9 @@
+Login:
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+password to login:
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+command used:
+find . -type f -size 1033c ! -executable -exec cat {} \;
+Search for files that are exactly 1033 bytes (1033c) and not executable. Upon finding it, cat prints the file’s contents — that’s the next password.
+password for next level:
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
