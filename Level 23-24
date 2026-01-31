@@ -1,0 +1,15 @@
+Login:
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+password to login:
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+command used:
+cat /etc/cron.d/cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh
+explanation:
+This level uses a cron job that executes a script as bandit24.
+The cron configuration file shows which script is being run automatically.
+By reading the script, you can see that it executes and deletes scripts placed in a specific temporary directory.
+By creating your own script in that directory which reads /etc/bandit_pass/bandit24,
+the cron job will execute it with bandit24’s permissions and reveal the password for the next level.
+password for next level:
+gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
