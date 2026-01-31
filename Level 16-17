@@ -1,0 +1,16 @@
+Login:
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+password to login:
+kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+command used:
+nmap -p 31000-32000 localhost
+openssl s_client -connect localhost:31790
+(then paste the current password and press Enter)
+explanation:
+In this level, several services are running on ports between 31000 and 32000, but only one uses SSL and accepts the correct password.
+nmap is used to scan the port range and identify which ports are open.
+Among the open ports, the SSL-enabled service is identified.
+openssl s_client is then used to securely connect to that port.
+After sending the correct password, the service responds with a private SSH key for the next level.
+password for next level:
+EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
