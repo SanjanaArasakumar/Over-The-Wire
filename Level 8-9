@@ -1,0 +1,13 @@
+Login:
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+password to login:
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+command used:
+sort data.txt | uniq -u
+explanation:
+The file data.txt contains many duplicate lines, but only one line occurs exactly once.
+The sort command arranges all lines so duplicates are grouped together.
+The uniq -u command then prints only the line that is unique.
+That unique line is the password for the next level.
+password for next level:
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
