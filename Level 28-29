@@ -1,0 +1,21 @@
+Login:
+ssh bandit28@bandit.labs.overthewire.org -p 2220
+password to login:
+Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
+command used:
+ls
+git clone ssh://bandit28-git@localhost/home/bandit28-git/repo
+cd repo
+cat README.md
+git log
+git show <commit_id>
+explanation:
+After cloning the Git repository, the README.md file does not show the password directly.
+The password was removed in a later commit.
+By checking the Git history using git log, you can see previous commits.
+Using git show on an older commit reveals the file content before the password was removed.
+That earlier version contains the password for the next level.
+password for next level:
+4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
+
+
