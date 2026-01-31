@@ -1,0 +1,16 @@
+Login:
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+password to login:
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+command used:
+echo "<current_password>" | nc -l -p 12345
+./suconnect 12345
+explanation:
+This level includes a program called suconnect that connects to a specified port on localhost.
+First, nc (netcat) is used to listen on a local port and send the current password when a connection is made.
+Then suconnect connects to that port and reads the password.
+If the correct password is received, suconnect responds with the password for the next level.
+password for next level:
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+
+
