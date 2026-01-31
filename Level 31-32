@@ -1,0 +1,20 @@
+Login:
+ssh bandit31@bandit.labs.overthewire.org -p 2220
+password to login:
+b5S2xb7bRyFmAvQYQGEqsfbhVyJqhnDy
+command used:
+ls
+git clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+cd repo
+cat README.md
+echo "May I come in?" > key.txt
+git add key.txt
+git commit -m "add key"
+git push
+explanation:
+After cloning the Git repository, the README.md instructs you to push a file to the repo.
+You must create a file named key.txt with the exact required content.
+After adding and committing the file, pushing it to the repository triggers a server-side hook.
+The hook validates the content and then reveals the password for the next level.
+password for next level:
+309RfhqyAlVBEZpVb6LYStshZoqoSx5K
