@@ -1,0 +1,19 @@
+Login:
+ssh bandit30@bandit.labs.overthewire.org -p 2220
+password to login:
+qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
+command used:
+ls
+git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
+cd repo
+git tag
+git show secret
+explanation:
+This level again uses a Git repository, but the password is not in branches or commits.
+By listing Git tags using git tag, you can see a tag named secret.
+Git tags can also store data.
+Using git show secret displays the content of the tag, which contains the password for the next level.
+password for next level:
+fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+
+
