@@ -1,0 +1,12 @@
+Login:
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+password to login:
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+command used:
+base64 -d data.txt
+explanation:
+The file data.txt is encoded using Base64.
+The base64 -d command decodes the file back to its original readable form.
+The decoded output contains the password for the next level.
+password for next level:
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
