@@ -1,0 +1,11 @@
+Login:
+ssh bandit33@bandit.labs.overthewire.org -p 2220
+password to login:
+tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+command used:
+cat README.txt
+explanation:
+Bandit Level 33 is the final level of the Bandit wargame.
+There is no next level or next user after bandit33.
+The README file confirms successful completion of the game and congratulates the player.
+At this point, the Bandit challenge series officially ends.
