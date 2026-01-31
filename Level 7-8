@@ -1,0 +1,14 @@
+Login:
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+password to login:
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+command used:
+grep millionth data.txt
+explanation:
+The password is stored in the file data.txt.
+Each line contains a key–value pair.
+The password is associated with the key millionth.
+grep searches for the line containing millionth and prints it.
+The value next to millionth is the password for the next level.
+password for next level:
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
