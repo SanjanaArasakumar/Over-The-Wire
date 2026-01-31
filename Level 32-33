@@ -1,0 +1,15 @@
+Login:
+ssh bandit32@bandit.labs.overthewire.org -p 2220
+password to login:
+309RfhqyAlVBEZpVb6LYStshZoqoSx5K
+command used:
+$0
+whoami
+cat /etc/bandit_pass/bandit33
+explanation:
+When you log in, you are placed inside a restricted shell that only accepts uppercase commands.
+However, $0 represents the name of the current shell.
+Running $0 launches a normal interactive shell, bypassing the restriction.
+Once in the normal shell, you can verify your user and directly read the final password file.
+password for next level:
+tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
