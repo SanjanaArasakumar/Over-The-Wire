@@ -1,0 +1,13 @@
+Login:
+ssh bandit18@bandit.labs.overthewire.org -p 2220
+password to login:
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+command used:
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+explanation:
+In this level, logging in normally immediately logs you out due to a modified shell configuration.
+To bypass this, a command is supplied directly to SSH at login time.
+SSH executes cat readme without starting an interactive shell.
+The output of this command displays the password for the next level.
+password for next level:
+cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
