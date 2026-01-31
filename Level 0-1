@@ -1,13 +1,12 @@
 Login command:
 ssh bandit0@bandit.labs.overthewire.org -p 2220
+password to use:
+bandit0
 After logging in, you are in the home directory of bandit0
-
 The password for the next level is stored in a file named readme
-
 cat is used to display the contents of a file
-
 The output of this command is the password for bandit1
 Command used:
 cat readme
-Password for next level (bandit1):B\
+Password for next level (bandit1):
 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
