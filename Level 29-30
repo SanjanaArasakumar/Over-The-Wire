@@ -1,0 +1,20 @@
+Login:
+ssh bandit29@bandit.labs.overthewire.org -p 2220
+password to login:
+4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
+command used:
+ls
+git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+cd repo
+git branch -a
+git checkout dev
+cat README.md
+explanation:
+After cloning the Git repository, the default branch does not contain the password.
+By listing all branches using git branch -a, you can see additional branches.
+Switching to the dev branch reveals different content.
+Inside this branch, the README.md file contains the password for the next level.
+password for next level:
+qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
+
+
