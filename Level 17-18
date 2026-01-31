@@ -1,0 +1,13 @@
+Login:
+ssh -i sshkey.private bandit17@bandit.labs.overthewire.org -p 2220
+password to login:
+EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
+command used:
+diff passwords.old passwords.new
+explanation:
+This level contains two files: passwords.old and passwords.new.
+Both files are very similar, but only one line is different between them.
+The diff command compares the two files line by line and shows the differences.
+The line that appears only in passwords.new is the password for the next level.
+password for next level:
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
