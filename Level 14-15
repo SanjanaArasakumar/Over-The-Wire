@@ -1,0 +1,13 @@
+Login:
+ssh bandit14@bandit.labs.overthewire.org -p 2220
+password to login:
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+command used:
+cat /etc/bandit_pass/bandit14 | nc localhost 30000
+explanation:
+In this level, the password must be sent to a service running on port 30000 on localhost.
+The cat command reads the current level’s password from /etc/bandit_pass/bandit14.
+The nc (netcat) command is used to send this password to the listening service.
+If the correct password is sent, the service responds with the password for the next level.
+password for next level:
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
