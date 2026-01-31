@@ -1,0 +1,10 @@
+Login:
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+pasword to login:
+ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+command used:
+cat ./-
+./ tells Linux explicitly that - is a file in the current directory
+This allows cat to correctly read the file
+password for next level:
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
