@@ -1,0 +1,13 @@
+Login:
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+password to login:
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+command used:
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+explanation:
+The file data.txt is encoded using ROT13 encryption.
+ROT13 shifts each letter by 13 positions in the alphabet.
+The tr command is used to translate characters and reverse the ROT13 encoding.
+The output of this command reveals the password for the next level.
+password for next level:
+7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
